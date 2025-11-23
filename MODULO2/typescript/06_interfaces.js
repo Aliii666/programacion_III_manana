@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 var usuario1 = {
     id: 12,
-    nombre: 'Carlos Andrés Zambrano'
+    nombre: 'Jose Garcia Marquez'
 };
 var usuario2 = {
     id: 13,
     nombre: 'Pablo Escobar',
-    correo: 'elpatron@delmal.com'
+    correo: 'pablo@escobar.com'
 };
 console.log(usuario1);
 console.log(usuario1.id);

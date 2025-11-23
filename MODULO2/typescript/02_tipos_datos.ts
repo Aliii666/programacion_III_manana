@@ -1,5 +1,5 @@
 let edad: number = 19;
-let nombre: string = "Andrés";
+let nombre: string = "Ali";
 let activo: boolean = true;
 let valor: any = 6;
 

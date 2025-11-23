@@ -1,19 +1,18 @@
-interface usuario {
+interface Usuario{
     id: number;
     nombre: string;
     correo?: string;
 }
 
-const usuario1: usuario = {
-    id:12,
-    nombre: 'Carlos Andrés Zambrano'
+const usuario1: Usuario = {
+    id: 12,
+    nombre: "Juan Perez"
 }
-const usuario2: usuario = {
-    id:13,
-    nombre:'Pablo Escobar',
-    correo: 'elpatron@delmal.com'
+const usuario2: Usuario = {
+    id: 13,
+    nombre: "Pablo Escobar",
+    correo: "pablo@escobar.com"
 }
-
 console.log(usuario1);
 console.log(usuario1.id);
 console.log(usuario1.nombre);

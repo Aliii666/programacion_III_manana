@@ -1,12 +1,14 @@
-var usuario1 = {
+import { Usuario } from "./05_mp_interface";
+
+const usuario1: Usuario = {
     id: 12,
-    nombre: "Juan Perez"
-};
-var usuario2 = {
+    nombre: 'Jose Garcia Marquez'
+}
+const usuario2: Usuario = {
     id: 13,
-    nombre: "Pablo Escobar",
-    correo: "pablo@escobar.com"
-};
+    nombre: 'Pablo Escobar',
+    correo: 'pablo@escobar.com'
+}
 console.log(usuario1);
 console.log(usuario1.id);
 console.log(usuario1.nombre);

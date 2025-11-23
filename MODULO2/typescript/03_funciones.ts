@@ -2,7 +2,7 @@
 function saludar(nombre?: string): string {
     return `Hola ${nombre}`;
 }
-console.log(saludar('Andrés'));
+console.log(saludar('Ali'));
 
 //funciones flecha
 const sumar = (a: number, b: number): number => {
