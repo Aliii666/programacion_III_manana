@@ -1,11 +1,11 @@
 const caja = document.getElementById('caja');
 
 caja.addEventListener('mouseover', () => {
-    caja.style.background = 'yellow';
+    caja.style.background = '#e3b5ff';
 });
 
 caja.addEventListener('mouseout', () => {
-    caja.style.background = 'blue';
+    caja.style.background = '#b084cc';
 });
 
 caja.addEventListener('click', () => {
@@ -15,14 +15,14 @@ caja.addEventListener('click', () => {
 const areaTouch = document.getElementById('areaTouch');
 
 areaTouch.addEventListener('touchstart', () => {
-    areaTouch.style.background = 'red';
+    areaTouch.style.background = '#ff9ce6';
 });
 
 areaTouch.addEventListener('touchend', () => {
-    areaTouch.style.background = 'blue';
+    areaTouch.style.background = '#d47dd4'; 
 });
 
 areaTouch.addEventListener('click', () => {
-    areaTouch.style.background = 'yellow';
+    areaTouch.style.background = '#f2a9ff';
     alert('Área táctil activada');
 });

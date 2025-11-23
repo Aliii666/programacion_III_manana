@@ -1,77 +1,51 @@
-console.log("Funciones AliAcademy");
+console.log("ALIACADEMY - SISTEMA DE ADMISIONES | FUNCIONES");
 
-function mostrarBienvenida() {
-    console.log("Bienvenido al sistema de Admisiones AliAcademy");
+console.log("MÓDULO DE BIENVENIDA - FUNCIÓN CLÁSICA");
+function saludar(nombre){
+    console.log("Bienvenido al módulo de Admisiones AliAcademy");
 }
-mostrarBienvenida();
+saludar();
 
-function calcularMatricula(costo, descuento) {
+
+console.log("CÁLCULOS DE MATRÍCULA - PARÁMETROS Y RESULTADOS");
+function calcularMatricula(costo, descuento){
     return costo - descuento;
 }
-let total = calcularMatricula(300, 50);
-console.log("Total matrícula:", total);
+let total = calcularMatricula(250, 30);
+console.log("Valor final de matrícula:", total);
 
+
+console.log("OPERACIONES RÁPIDAS - FUNCIÓN FLECHA");
 const restarCuota = (a, b) => {
     return a - b;
-};
+}
 let cuotaRestante = restarCuota(200, 80);
-console.log("Cuota restante:", cuotaRestante);
+console.log("Cuota pendiente:", cuotaRestante);
 
+
+console.log("CÁLCULO DIRECTO ACADÉMICO (CUADRADO DE UN VALOR)");
 const cuadrado = x => x * x;
-console.log("Evaluación cuadrada:", cuadrado(5));
+console.log("Evaluación cuadrada de 5:", cuadrado(5));
 
-function saludoPersonal(nombre, saludo = "Bienvenido") {
+console.log("SALUDO PERSONALIZADO - PARÁMETRO POR DEFECTO");
+function saludoPersonal(nombre, saludo = "Bienvenido al sistema de AliAcademy"){
     return saludo + " " + nombre;
 }
-console.log(saludoPersonal("Ana"));
-console.log(saludoPersonal("Luis", "Hola"));
+let sp1 = saludoPersonal("Ana");
+let sp2 = saludoPersonal("Luis", "Hola, tu proceso de admisión está activo");
+console.log(sp1);
+console.log(sp2);
 
+
+console.log("CÁLCULO DE ÁREAS - EJEMPLOS ACADÉMICOS");
 function areaTriangulo(base, altura) {
-    let area = (base * altura) / 2;
-    return area;
-}
-console.log("Área calculada:", areaTriangulo(10, 5));
-
-let notas = [10, 8, 7, 9];
-let vacio = new Array();
-let vacio2 = [];
-
-console.log("Notas registradas:", notas);
-console.log(vacio);
-console.log(vacio2);
-
-console.log(notas[0]);
-console.log(notas[3]);
-
-notas[0] = 100;
-console.log(notas);
-
-notas.push(50);
-console.log(notas);
-
-notas.unshift(99);
-console.log(notas);
-
-notas.pop();
-console.log(notas);
-
-notas.shift();
-console.log(notas);
-
-let index = 0;
-while (index < notas.length) {
-    console.log("Nota", index, "=", notas[index]);
-    index++;
+    return (base * altura) / 2;
 }
 
-for (let i = 0; i < notas.length; i++) {
-    console.log(notas[i]);
-}
+const a1 = areaTriangulo(4, 3);
+const a2 = areaTriangulo(10, 5);
+const a3 = areaTriangulo(6, 8);
 
-for (let valor of notas) {
-    console.log(valor);
-}
-
-notas.forEach(function(valor, indice) {
-    console.log(indice, valor);
-});
+console.log("Área 4x3 =", a1);
+console.log("Área 10x5 =", a2);
+console.log("Área 6x8 =", a3);

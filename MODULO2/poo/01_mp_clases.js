@@ -1,23 +1,26 @@
 class Estudiante {
-    constructor(nombre, carrera) {
+    constructor(nombre, carrera){
         this.nombre = nombre;
         this.carrera = carrera;
     }
 
-    registrar() {
-        console.log(`${this.nombre} inscrito en la carrera ${this.carrera}`);
+    iniciarProceso(){
+        console.log(`Proceso iniciado: ${this.nombre} ha comenzado el proceso de admisión para ${this.carrera}.`);
     }
 
-    estudiar() {
-        console.log(`${this.nombre} está estudiando ${this.carrera}`);
+    validarDocumentos(){
+        console.log(`Validación: Revisando documentos de ${this.nombre} para la carrera de ${this.carrera}.`);
     }
 
-    graduarse() {
-        console.log(`${this.nombre} se ha graduado de ${this.carrera}`);
+    finalizarRegistro(){
+        console.log(`Registro completado: ${this.nombre} ha finalizado su inscripción en ${this.carrera}.`);
     }
 }
 
-const alumno = new Estudiante("Ana López", "Desarrollo de Software");
-alumno.registrar();
-alumno.estudiar();
-alumno.graduarse();
+const aspirante = new Estudiante('Ana', 'Desarrollo de Software');
+aspirante.iniciarProceso();
+aspirante.validarDocumentos();
+aspirante.finalizarRegistro();
+
+console.log(`Nombre del aspirante: ${aspirante.nombre}`);
+console.log(`Carrera seleccionada: ${aspirante.carrera}`);

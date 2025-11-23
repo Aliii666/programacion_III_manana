@@ -1,6 +1,5 @@
 console.log("📚 VARIABLES EN ALIACADEMY");
 
-// Variables simulando datos del sistema
 let institucion = "AliAcademy";
 let estudiante = "María López";
 let edad = 20;
@@ -14,7 +13,6 @@ console.log("¿Matriculado?:", matriculado);
 console.log("Promedio:", promedio);
 console.log("Tipo de variable promedio:", typeof(promedio));
 
-// Ejemplo de objeto y arreglo
 let carrera = { nombre: "Desarrollo de Software", duracion: "3 años" };
 console.log("Carrera:", carrera);
 

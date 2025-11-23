@@ -1,22 +1,22 @@
-class Postulante {
-    constructor(nombre, edad) {
+class Aspirante {
+    constructor(nombre, edad){
         this.nombre = nombre;
         this.edad = edad;
     }
 
-    puedeInscribirse() {
-        if (this.edad >= 18) {
-            console.log("Puede aplicar a AliAcademy");
+    verificarEdad(){
+        if (this.edad >= 18){
+            console.log("Registro válido: aspirante mayor de edad. Puede continuar con el proceso de matrícula.");
         } else {
-            console.log("No cumple con la edad mínima de ingreso");
+            console.log("Registro condicionado: aspirante menor de edad. Requiere autorización para completar la inscripción.");
         }
     }
 
-    mostrarInfo() {
-        console.log(this.nombre, this.edad);
+    mostrarFicha(){
+        console.log(`Ficha del Aspirante — Nombre: ${this.nombre} | Edad: ${this.edad} años | Estado: En proceso de admisión.`);
     }
 }
 
-const nuevoPostulante = new Postulante("Carlos", 17);
-nuevoPostulante.puedeInscribirse();
-nuevoPostulante.mostrarInfo();
+const pedro = new Aspirante('Pedro', 17);
+pedro.verificarEdad();
+pedro.mostrarFicha();

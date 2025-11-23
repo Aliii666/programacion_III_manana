@@ -1,4 +1,4 @@
-console.log("📘 AliAcademy | Inicializando módulo DOM...");
+console.log("AliAcademy | Inicializando módulo DOM...");
 
 console.log("HEAD del documento:", document.head);
 console.log("Elementos dentro del BODY:", document.body.children);

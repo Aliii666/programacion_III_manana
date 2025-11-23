@@ -1,17 +1,20 @@
-class Usuario {
+class RolAcademico {
     constructor(nombre) {
         this.nombre = nombre;
     }
-
-    mostrarRol() {
-        console.log("Usuario general del sistema");
+    hacerAccion() {
+        console.log(`${this.nombre}: Participando en actividades académicas generales dentro de AliAcademy.`);
     }
 }
 
-class Estudiante extends Usuario {}
+class Tutor extends RolAcademico {
+    hacerAccion() {
+        console.log(`${this.nombre}: Guiando a estudiantes, resolviendo dudas y supervisando el avance académico.`);
+    }
+}
 
-const est = new Estudiante("María");
-const user = new Usuario("Invitado");
+const tutor = new Tutor('Ana');
+const rolGeneral = new RolAcademico('Asistente Académico');
 
-est.mostrarRol();
-user.mostrarRol();
+tutor.hacerAccion();
+rolGeneral.hacerAccion();
