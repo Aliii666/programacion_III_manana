@@ -19,5 +19,9 @@ export class User {
     
     @Column({ nullable: true })
     profile: string;
+    
+    @Column({ nullable: true })
+    profile: string;
+
 }
 
