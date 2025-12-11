@@ -1,9 +1,9 @@
-import ParentLoginForm from "./props/ParentLoginForm";
+import MultiSwitch from "./useState/MultiSwitch";
 
 function App() {
   return (
     <>
-      <ParentLoginForm />
+      <MultiSwitch />
     </>
   );
 }
