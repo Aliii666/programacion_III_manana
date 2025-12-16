@@ -1,9 +1,9 @@
-import MultiSwitch from "./useState/MultiSwitch";
+import ReproductorSonido from "./useRef/ReproductorSonido";
 
 function App() {
   return (
     <>
-      <MultiSwitch />
+      <ReproductorSonido />
     </>
   );
 }
