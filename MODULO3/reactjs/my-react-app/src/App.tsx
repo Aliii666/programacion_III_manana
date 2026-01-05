@@ -1,11 +1,11 @@
-import ReproductorSonido from "./useRef/ReproductorSonido";
+import SalarioSemanal from "./useState/CaulculoSalario";
 
 function App() {
-  return (
-    <>
-      <ReproductorSonido />
-    </>
-  );
+    return (
+        <div>
+            <SalarioSemanal />
+        </div>
+    );
 }
 
 export default App;
