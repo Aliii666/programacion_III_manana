@@ -1,25 +1,22 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Layout } from "antd";
 
-import AntNavbar from "./components/antd/AntNavbar";
+import AntLayout from "./components/antd/AntLayout";
 import AntFooter from "./components/antd/AntFooter";
-import HomeAntd from "./pages/HomeAntd";
-import AboutAntd from "./pages/AboutAntd";
+import HomeAnt from "./pages/HomeAnt";
+import AboutAnt from "./pages/AboutAnt";
 
 export default function App() {
   return (
     <BrowserRouter>
-      <Layout style={{ minHeight: "100vh" }}>
-        <AntNavbar />
-
+      <AntLayout>
         <Routes>
-          <Route path="/" element={<HomeAntd />} />
-          <Route path="/about" element={<AboutAntd />} />
+          <Route path="/" element={<HomeAnt />} />
+          <Route path="/about" element={<AboutAnt />} />
         </Routes>
+      </AntLayout>
 
-        <AntFooter />
-      </Layout>
+      <AntFooter />
     </BrowserRouter>
   );
 }
