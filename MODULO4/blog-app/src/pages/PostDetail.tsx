@@ -1,5 +1,4 @@
-
-import { useEffect, useState, type JSX } from "react";
+import { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { Box, Typography, Button } from "@mui/material";
 import axios from "axios";
@@ -10,13 +9,13 @@ interface Post {
   content: string;
 }
 
-export function PostDetail(): JSX.Element {
+export function PostDetail() {
   const { id } = useParams<{ id: string }>();
   const navigate = useNavigate();
   const [post, setPost] = useState<Post | null>(null);
 
-  useEffect((): void => {
-    axios.get(`https://localhost:3000/posts/${id}`)
+  useEffect(() => {
+    axios.get(`https://nestjs-blog-backend-api.desarrollo-software.xyz/posts/${id}`)
       .then(res => setPost(res.data.data))
       .catch(() => navigate("/"));
   }, [id]);

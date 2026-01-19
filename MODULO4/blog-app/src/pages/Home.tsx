@@ -1,4 +1,4 @@
-import { useEffect, useState, type JSX } from "react";
+import { useEffect, useState } from "react";
 import { Box, Typography, Card, CardContent, Button } from "@mui/material";
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
@@ -10,13 +10,13 @@ interface Post {
   content?: string;
 }
 
-export function Home(): JSX.Element {
+export function Home() {
   const [posts, setPosts] = useState<Post[]>([]);
   const navigate = useNavigate();
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/posts?page=1&limit=2")
+      .get("https://nestjs-blog-backend-api.desarrollo-software.xyz/posts?page=1&limit=2")
       .then((res) => setPosts(res.data.data.items))
       .catch(() => setPosts([]));
   }, []);
